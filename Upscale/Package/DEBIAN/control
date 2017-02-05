@@ -1,0 +1,17 @@
+Package: com.zerox.Upscale
+Name: Upscale
+Version: 1.0-1
+Description: Change your device's resolution!
+Section: Tweak
+Depends: firmware (>= 5.0), mobilesubstrate, preferenceloader
+Conflicts: 
+Replaces: 
+Priority: optional
+Architecture: iphoneos-arm
+Author: Bryce Dougherty (@bd452)
+dev: 
+Homepage: 
+Depiction: 
+Maintainer: ZeroX <lawliet0914@gmail.com>
+Icon: 
+

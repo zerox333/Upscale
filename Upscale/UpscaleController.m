@@ -1,7 +1,6 @@
-#import <Preferences/Preferences.h>
 #import <objc/runtime.h>
-
-#define DEBUG
+#import <Preferences.h>
+#import "UpscaleController.h"
 
 #ifdef DEBUG
 #define DebugLog(s, ...) \
@@ -26,7 +25,11 @@ NSLog(@"[Upscale] >> %@", \
 }
 @end
 
-@implementation UpscaleListController
+@interface UpscaleController ()
+
+@end
+
+@implementation UpscaleController
 int height;
 int width;
 NSDictionary *prefs;
@@ -157,8 +160,8 @@ extern NSString* PSDeletionActionKey;
     [self showAlert];
 }
 -(void)go_6plus {
-    width = 850;
-    height = 1511;
+    width = 828;
+    height = 1472;
     [self showAlert];
 }
 -(void)showAlert {
@@ -279,8 +282,6 @@ void customGo(id self, SEL _cmd) {
         UIView* view = [[UIView alloc] init];
         systemTintColor = view.tintColor;
     });
-    self.textLabel.textColor = systemTintColor;
-    self.accessoryType = UITableViewCellAccessoryNone;
 }
 
 @end

@@ -1,0 +1,404 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ABD521FF1E46BE4100D7EBA3 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD521FE1E46BE4000D7EBA3 /* Foundation.framework */; };
+		ABD522011E46BE4100D7EBA3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD522001E46BE4100D7EBA3 /* UIKit.framework */; };
+		ABD522031E46BE4100D7EBA3 /* Preferences.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ABD522021E46BE4100D7EBA3 /* Preferences.framework */; };
+		ABD5220D1E46BE4100D7EBA3 /* UpscaleController.h in Headers */ = {isa = PBXBuildFile; fileRef = ABD5220C1E46BE4100D7EBA3 /* UpscaleController.h */; };
+		ABD5220F1E46BE4100D7EBA3 /* UpscaleController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABD5220E1E46BE4100D7EBA3 /* UpscaleController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		ABD521FB1E46BE4000D7EBA3 /* Upscale.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = Upscale.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		ABD521FE1E46BE4000D7EBA3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		ABD522001E46BE4100D7EBA3 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		ABD522021E46BE4100D7EBA3 /* Preferences.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Preferences.framework; path = Library/Frameworks/Preferences.framework; sourceTree = DEVELOPER_DIR; };
+		ABD522071E46BE4100D7EBA3 /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		ABD522081E46BE4100D7EBA3 /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		ABD5220A1E46BE4100D7EBA3 /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		ABD5220B1E46BE4100D7EBA3 /* Upscale-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Upscale-Info.plist"; sourceTree = "<group>"; };
+		ABD5220C1E46BE4100D7EBA3 /* UpscaleController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = UpscaleController.h; sourceTree = "<group>"; };
+		ABD5220E1E46BE4100D7EBA3 /* UpscaleController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UpscaleController.m; sourceTree = "<group>"; };
+		ABD522131E46BE4100D7EBA3 /* Upscale.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Upscale.plist; path = Package/Library/PreferenceLoader/Preferences/Upscale.plist; sourceTree = "<group>"; };
+		ABD522161E46BE4100D7EBA3 /* Upscale.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = Upscale.plist; path = Package/Library/PreferenceBundles/Upscale.bundle/Upscale.plist; sourceTree = "<group>"; };
+		ABD522171E46BE4100D7EBA3 /* UpscaleIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = UpscaleIcon.png; path = Package/Library/PreferenceBundles/Upscale.bundle/UpscaleIcon.png; sourceTree = "<group>"; };
+		ABD522181E46BE4100D7EBA3 /* UpscaleIcon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "UpscaleIcon@2x.png"; path = "Package/Library/PreferenceBundles/Upscale.bundle/UpscaleIcon@2x.png"; sourceTree = "<group>"; };
+		ABD5221D1E46BE4100D7EBA3 /* com.zerox.Upscale.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; name = com.zerox.Upscale.plist; path = Package/var/mobile/Library/Preferences/com.zerox.Upscale.plist; sourceTree = "<group>"; };
+		ABD5221E1E46BE4100D7EBA3 /* Upscale-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Upscale-Prefix.pch"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		ABD521F71E46BE4000D7EBA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD521FF1E46BE4100D7EBA3 /* Foundation.framework in Frameworks */,
+				ABD522031E46BE4100D7EBA3 /* Preferences.framework in Frameworks */,
+				ABD522011E46BE4100D7EBA3 /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		ABD521F11E46BE4000D7EBA3 = {
+			isa = PBXGroup;
+			children = (
+				ABD522041E46BE4100D7EBA3 /* Upscale */,
+				ABD521FD1E46BE4000D7EBA3 /* Frameworks */,
+				ABD521FC1E46BE4000D7EBA3 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		ABD521FC1E46BE4000D7EBA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				ABD521FB1E46BE4000D7EBA3 /* Upscale.bundle */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		ABD521FD1E46BE4000D7EBA3 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				ABD521FE1E46BE4000D7EBA3 /* Foundation.framework */,
+				ABD522001E46BE4100D7EBA3 /* UIKit.framework */,
+				ABD522021E46BE4100D7EBA3 /* Preferences.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		ABD522041E46BE4100D7EBA3 /* Upscale */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5220C1E46BE4100D7EBA3 /* UpscaleController.h */,
+				ABD5220E1E46BE4100D7EBA3 /* UpscaleController.m */,
+				ABD522051E46BE4100D7EBA3 /* Package */,
+				ABD522091E46BE4100D7EBA3 /* Supporting Files */,
+			);
+			path = Upscale;
+			sourceTree = "<group>";
+		};
+		ABD522051E46BE4100D7EBA3 /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522061E46BE4100D7EBA3 /* DEBIAN */,
+				ABD522101E46BE4100D7EBA3 /* Library */,
+				ABD522191E46BE4100D7EBA3 /* var */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		ABD522061E46BE4100D7EBA3 /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522071E46BE4100D7EBA3 /* control.txt */,
+				ABD522081E46BE4100D7EBA3 /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		ABD522091E46BE4100D7EBA3 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5220A1E46BE4100D7EBA3 /* PackageVersion.plist */,
+				ABD5220B1E46BE4100D7EBA3 /* Upscale-Info.plist */,
+				ABD5221E1E46BE4100D7EBA3 /* Upscale-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		ABD522101E46BE4100D7EBA3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522111E46BE4100D7EBA3 /* PreferenceLoader */,
+				ABD522141E46BE4100D7EBA3 /* PreferenceBundles */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		ABD522111E46BE4100D7EBA3 /* PreferenceLoader */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522121E46BE4100D7EBA3 /* Preferences */,
+			);
+			name = PreferenceLoader;
+			sourceTree = "<group>";
+		};
+		ABD522121E46BE4100D7EBA3 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522131E46BE4100D7EBA3 /* Upscale.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+		ABD522141E46BE4100D7EBA3 /* PreferenceBundles */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522151E46BE4100D7EBA3 /* ___PACKAGENAME___.bundle */,
+			);
+			name = PreferenceBundles;
+			sourceTree = "<group>";
+		};
+		ABD522151E46BE4100D7EBA3 /* ___PACKAGENAME___.bundle */ = {
+			isa = PBXGroup;
+			children = (
+				ABD522161E46BE4100D7EBA3 /* Upscale.plist */,
+				ABD522171E46BE4100D7EBA3 /* UpscaleIcon.png */,
+				ABD522181E46BE4100D7EBA3 /* UpscaleIcon@2x.png */,
+			);
+			name = "___PACKAGENAME___.bundle";
+			sourceTree = "<group>";
+		};
+		ABD522191E46BE4100D7EBA3 /* var */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5221A1E46BE4100D7EBA3 /* mobile */,
+			);
+			name = var;
+			sourceTree = "<group>";
+		};
+		ABD5221A1E46BE4100D7EBA3 /* mobile */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5221B1E46BE4100D7EBA3 /* Library */,
+			);
+			name = mobile;
+			sourceTree = "<group>";
+		};
+		ABD5221B1E46BE4100D7EBA3 /* Library */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5221C1E46BE4100D7EBA3 /* Preferences */,
+			);
+			name = Library;
+			sourceTree = "<group>";
+		};
+		ABD5221C1E46BE4100D7EBA3 /* Preferences */ = {
+			isa = PBXGroup;
+			children = (
+				ABD5221D1E46BE4100D7EBA3 /* com.zerox.Upscale.plist */,
+			);
+			name = Preferences;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		ABD521F81E46BE4000D7EBA3 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD5220D1E46BE4100D7EBA3 /* UpscaleController.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		ABD521FA1E46BE4000D7EBA3 /* Upscale */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = ABD522211E46BE4100D7EBA3 /* Build configuration list for PBXNativeTarget "Upscale" */;
+			buildPhases = (
+				ABD521F61E46BE4000D7EBA3 /* Sources */,
+				ABD521F71E46BE4000D7EBA3 /* Frameworks */,
+				ABD521F81E46BE4000D7EBA3 /* Headers */,
+				ABD521F91E46BE4000D7EBA3 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Upscale;
+			productName = Upscale;
+			productReference = ABD521FB1E46BE4000D7EBA3 /* Upscale.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		ABD521F21E46BE4000D7EBA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0820;
+				TargetAttributes = {
+					ABD521FA1E46BE4000D7EBA3 = {
+						CreatedOnToolsVersion = 8.2.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = ABD521F51E46BE4000D7EBA3 /* Build configuration list for PBXProject "Upscale" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = ABD521F11E46BE4000D7EBA3;
+			productRefGroup = ABD521FC1E46BE4000D7EBA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				ABD521FA1E46BE4000D7EBA3 /* Upscale */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ABD521F91E46BE4000D7EBA3 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		ABD521F61E46BE4000D7EBA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ABD5220F1E46BE4100D7EBA3 /* UpscaleController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		ABD5221F1E46BE4100D7EBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		ABD522201E46BE4100D7EBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		ABD522221E46BE4100D7EBA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Upscale/Upscale-Prefix.pch";
+				INFOPLIST_FILE = "Upscale/Upscale-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 127.0.0.1;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPort = 2222;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		ABD522231E46BE4100D7EBA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				ENABLE_BITCODE = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Upscale/Upscale-Prefix.pch";
+				INFOPLIST_FILE = "Upscale/Upscale-Info.plist";
+				INSTALL_PATH = /Library/PreferenceBundles;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = bundle;
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = 127.0.0.1;
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevPort = 2222;
+				iOSOpenDevRespringOnInstall = NO;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		ABD521F51E46BE4000D7EBA3 /* Build configuration list for PBXProject "Upscale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD5221F1E46BE4100D7EBA3 /* Debug */,
+				ABD522201E46BE4100D7EBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		ABD522211E46BE4100D7EBA3 /* Build configuration list for PBXNativeTarget "Upscale" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				ABD522221E46BE4100D7EBA3 /* Debug */,
+				ABD522231E46BE4100D7EBA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = ABD521F21E46BE4000D7EBA3 /* Project object */;
+}

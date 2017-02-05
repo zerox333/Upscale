@@ -8,14 +8,12 @@
 		<string>Upscale</string>
 		<key>cell</key>
 		<string>PSLinkCell</string>
-		<key>detail</key>
-		<string>UpscaleListController</string>
-		<key>isController</key>
-		<true/>
+		<key>icon</key>
+		<string>UpscaleIcon.png</string>
 		<key>label</key>
 		<string>Upscale</string>
-		<key>icon</key>
-		<string>Upscale.png</string>
+		<key>isController</key>
+		<true/>
 	</dict>
 </dict>
 </plist>
